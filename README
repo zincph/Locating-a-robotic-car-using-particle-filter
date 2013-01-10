@@ -1,0 +1,18 @@
+*Locating a robotic car using particle filter
+
+
+ The robot travels in a "world" that has 4 landmarks.
+ 
+ landmarks  = [[0.0, 100.0], [0.0, 0.0], [100.0, 0.0], [100.0, 100.0]]
+
+ The robot's initial coordinates are somewhere in the square represented by the landmarks.
+
+ World is NOT cyclic. Robot is allowed to travel "out of bounds".
+
+ The robot can move, and sense its own location by measuring its bearings to the landmarks.
+ However, in the real world, there are considerable noises with both move and sense functions.
+
+ The GOAL is to locate the car (position and orientation) within specified tolerances at least 80% of the time.
+
+ tolerance_xy = 15.0 # Tolerance for localization in the x and y directions.
+ tolerance_orientation = 0.25 # Tolerance for orientation.
